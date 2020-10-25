@@ -30,7 +30,7 @@ public class UserService {
         if (user == null) {
             return false;
         }
-       /* ДЗ Добавить соль к паролю. Соль хранить в application.yml, чтобы на разных сайтах были разные хеши для
+       /* ! Добавить соль к паролю. Соль хранить в application.yml, чтобы на разных сайтах были разные хеши для
         одних паролей */
         /* преобразуем пароль через встроенный класс DigestUtils в md5Hex строку */
         String md5Hex = DigestUtils.md5DigestAsHex(password.getBytes())
@@ -59,9 +59,9 @@ public class UserService {
         appUserDao.update(user);
     }
 
-//    public static void main(String[] args) {
-//        /* пример md5 hash для пассворд*/
-//        System.out.println(DigestUtils.md5DigestAsHex("password".getBytes())
-//                .toUpperCase());
-//    }
+    public static void main(String[] args) {
+        /* пример получения md5 hash для пассворд*/
+        System.out.println(DigestUtils.md5DigestAsHex("password".getBytes())
+                .toUpperCase());
+    }
 }

@@ -94,9 +94,9 @@ we can declare dependency and its version explicitly in the dependencyManagement
                         <url>${url}</url>
                         <username>${username}</username>
                         <password>${password}</password>
-                        <!--                    <rollbackCount>1</rollbackCount>-->
-                        <!--                    <rollbackDate>2020-06-20</rollbackDate>-->
-                        <!--                    <rollbackTag>changelog-2.0</rollbackTag>-->
+                        <!-- <rollbackCount>1</rollbackCount>-->
+                        <!-- <rollbackDate>2020-06-20</rollbackDate>-->
+                        <!-- <rollbackTag>changelog-2.0</rollbackTag>-->
                     </configuration>
                     <executions>
                         <execution>
@@ -104,8 +104,8 @@ we can declare dependency and its version explicitly in the dependencyManagement
                             <goals>
                                 <goal>updateSQL</goal>
                                 <goal>update</goal>
-                                <!--                            <goal>generateChangeLog</goal>-->
-                                <!--                            <goal>rollback</goal>-->
+                                <!-- <goal>generateChangeLog</goal>-->
+                                <!-- <goal>rollback</goal>-->
                             </goals>
                         </execution>
                     </executions>
